@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SalaoBeleza
 {
-    public partial class Form3 : Form
+    public partial class Clientes : Form
     {
-        public Form3()
+        public Clientes()
         {
             InitializeComponent();
         }

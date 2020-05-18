@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnShowPass = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -76,9 +77,10 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(121, 290);
+            this.txtPass.Location = new System.Drawing.Point(117, 290);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(139, 20);
+            this.txtPass.PasswordChar = '*';
+            this.txtPass.Size = new System.Drawing.Size(143, 20);
             this.txtPass.TabIndex = 5;
             // 
             // label4
@@ -108,12 +110,24 @@
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnShowPass
+            // 
+            this.btnShowPass.Image = global::SalaoBeleza.Properties.Resources.cadeado;
+            this.btnShowPass.Location = new System.Drawing.Point(272, 280);
+            this.btnShowPass.Name = "btnShowPass";
+            this.btnShowPass.Size = new System.Drawing.Size(54, 30);
+            this.btnShowPass.TabIndex = 9;
+            this.btnShowPass.UseVisualStyleBackColor = true;
+            this.btnShowPass.Click += new System.EventHandler(this.btnShowPass_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 450);
+            this.ClientSize = new System.Drawing.Size(338, 450);
+            this.Controls.Add(this.btnShowPass);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.label4);
@@ -139,6 +153,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnShowPass;
     }
 }
 

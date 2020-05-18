@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SalaoBeleza
 {
-    public partial class Form2 : Form
+    public partial class Main : Form
     {
-        public Form2()
+        public Main()
         {
             InitializeComponent();
         }
@@ -20,6 +20,23 @@ namespace SalaoBeleza
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void mnuSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mnuPessoa_Click(object sender, EventArgs e)
+        {
+            Clientes form = new Clientes();
+            form.Show();
+        }
+
+        private void mnuProdutos_Click(object sender, EventArgs e)
+        {
+            Produtos form = new Produtos();
+            form.Show();
         }
     }
 }

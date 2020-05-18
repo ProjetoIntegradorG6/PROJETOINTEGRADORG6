@@ -1,6 +1,6 @@
 ﻿namespace SalaoBeleza
 {
-    partial class Form3
+    partial class Clientes
     {
         /// <summary>
         /// Required designer variable.
@@ -183,7 +183,7 @@
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
             // 
-            // Form3
+            // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,7 +201,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form3";
+            this.Name = "Clientes";
             this.Text = "Clientes";
             this.gbxPag.ResumeLayout(false);
             this.gbxPag.PerformLayout();

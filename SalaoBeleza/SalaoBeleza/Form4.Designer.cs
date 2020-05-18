@@ -1,6 +1,6 @@
 ﻿namespace SalaoBeleza
 {
-    partial class Form4
+    partial class Produtos
     {
         /// <summary>
         /// Required designer variable.
@@ -32,14 +32,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lstProdutos = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtNomee = new System.Windows.Forms.TextBox();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.mtkTel = new System.Windows.Forms.MaskedTextBox();
             this.mtkCNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.mtkTel = new System.Windows.Forms.MaskedTextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtNomee = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnSalve = new System.Windows.Forms.Button();
             this.btnCanc = new System.Windows.Forms.Button();
             this.btnAlt = new System.Windows.Forms.Button();
@@ -98,32 +98,35 @@
             this.panel1.Size = new System.Drawing.Size(323, 180);
             this.panel1.TabIndex = 3;
             // 
-            // label3
+            // mtkCNPJ
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Nome";
+            this.mtkCNPJ.Location = new System.Drawing.Point(7, 152);
+            this.mtkCNPJ.Mask = "00.000.000/0000-00";
+            this.mtkCNPJ.Name = "mtkCNPJ";
+            this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
+            this.mtkCNPJ.TabIndex = 7;
             // 
-            // label4
+            // mtkTel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Endereço";
+            this.mtkTel.Location = new System.Drawing.Point(7, 108);
+            this.mtkTel.Mask = "(00)99999-9999";
+            this.mtkTel.Name = "mtkTel";
+            this.mtkTel.Size = new System.Drawing.Size(100, 20);
+            this.mtkTel.TabIndex = 6;
             // 
-            // label5
+            // txtEndereco
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 91);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Telefone";
+            this.txtEndereco.Location = new System.Drawing.Point(6, 69);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(243, 20);
+            this.txtEndereco.TabIndex = 5;
+            // 
+            // txtNomee
+            // 
+            this.txtNomee.Location = new System.Drawing.Point(6, 26);
+            this.txtNomee.Name = "txtNomee";
+            this.txtNomee.Size = new System.Drawing.Size(243, 20);
+            this.txtNomee.TabIndex = 4;
             // 
             // label6
             // 
@@ -134,35 +137,32 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "CNPJ";
             // 
-            // txtNomee
+            // label5
             // 
-            this.txtNomee.Location = new System.Drawing.Point(6, 26);
-            this.txtNomee.Name = "txtNomee";
-            this.txtNomee.Size = new System.Drawing.Size(243, 20);
-            this.txtNomee.TabIndex = 4;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 91);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Telefone";
             // 
-            // txtEndereco
+            // label4
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(6, 69);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(243, 20);
-            this.txtEndereco.TabIndex = 5;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Endereço";
             // 
-            // mtkTel
+            // label3
             // 
-            this.mtkTel.Location = new System.Drawing.Point(7, 108);
-            this.mtkTel.Mask = "(00)99999-9999";
-            this.mtkTel.Name = "mtkTel";
-            this.mtkTel.Size = new System.Drawing.Size(100, 20);
-            this.mtkTel.TabIndex = 6;
-            // 
-            // mtkCNPJ
-            // 
-            this.mtkCNPJ.Location = new System.Drawing.Point(7, 152);
-            this.mtkCNPJ.Mask = "00.000.000/0000-00";
-            this.mtkCNPJ.Name = "mtkCNPJ";
-            this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
-            this.mtkCNPJ.TabIndex = 7;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Nome";
             // 
             // btnSalve
             // 
@@ -193,7 +193,7 @@
             this.btnAlt.Text = "Alterar";
             this.btnAlt.UseVisualStyleBackColor = true;
             // 
-            // Form4
+            // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -205,7 +205,7 @@
             this.Controls.Add(this.lstProdutos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form4";
+            this.Name = "Produtos";
             this.Text = "Produtos";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

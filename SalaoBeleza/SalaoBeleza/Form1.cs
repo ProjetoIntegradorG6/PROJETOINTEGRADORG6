@@ -24,11 +24,42 @@ namespace SalaoBeleza
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if ((txtLogin.Text == "Suh") && (txtPass.Text == "123")) ;
+
+            if (txtLogin.Text == "" || txtPass.Text == "")
             {
-                Form2 frmp = new Form2();
-                frmp.Show();
-                this.Visible = false;
+                MessageBox.Show("Required fields");
+            }
+            else
+            {
+                if (txtLogin.Text == "suh" && txtPass.Text == "1234")
+                {
+                    Main frm = new Main();
+
+                    frm.Show();
+                    //this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Login not found");
+                }
+
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnShowPass_Click(object sender, EventArgs e)
+        {
+            if (txtPass.PasswordChar == '*')
+            {
+                txtPass.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPass.PasswordChar = '*';
             }
         }
     }
