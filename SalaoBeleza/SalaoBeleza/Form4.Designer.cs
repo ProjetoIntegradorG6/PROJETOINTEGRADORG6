@@ -39,7 +39,7 @@
             this.txtNomee = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.mtkTel = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtkCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.btnSalve = new System.Windows.Forms.Button();
             this.btnCanc = new System.Windows.Forms.Button();
             this.btnAlt = new System.Windows.Forms.Button();
@@ -77,7 +77,7 @@
             "Tesouras",
             "Tinturas",
             "Toalhas"});
-            this.lstProdutos.Location = new System.Drawing.Point(12, 25);
+            this.lstProdutos.Location = new System.Drawing.Point(15, 25);
             this.lstProdutos.Name = "lstProdutos";
             this.lstProdutos.Size = new System.Drawing.Size(191, 95);
             this.lstProdutos.TabIndex = 2;
@@ -85,7 +85,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.maskedTextBox1);
+            this.panel1.Controls.Add(this.mtkCNPJ);
             this.panel1.Controls.Add(this.mtkTel);
             this.panel1.Controls.Add(this.txtEndereco);
             this.panel1.Controls.Add(this.txtNomee);
@@ -93,7 +93,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(15, 186);
+            this.panel1.Location = new System.Drawing.Point(15, 167);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(323, 180);
             this.panel1.TabIndex = 3;
@@ -156,13 +156,13 @@
             this.mtkTel.Size = new System.Drawing.Size(100, 20);
             this.mtkTel.TabIndex = 6;
             // 
-            // maskedTextBox1
+            // mtkCNPJ
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(7, 152);
-            this.maskedTextBox1.Mask = "00.000.000/0000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 7;
+            this.mtkCNPJ.Location = new System.Drawing.Point(7, 152);
+            this.mtkCNPJ.Mask = "00.000.000/0000-00";
+            this.mtkCNPJ.Name = "mtkCNPJ";
+            this.mtkCNPJ.Size = new System.Drawing.Size(100, 20);
+            this.mtkCNPJ.TabIndex = 7;
             // 
             // btnSalve
             // 
@@ -172,6 +172,7 @@
             this.btnSalve.TabIndex = 4;
             this.btnSalve.Text = "Salvar";
             this.btnSalve.UseVisualStyleBackColor = true;
+            this.btnSalve.Click += new System.EventHandler(this.btnSalve_Click);
             // 
             // btnCanc
             // 
@@ -181,6 +182,7 @@
             this.btnCanc.TabIndex = 5;
             this.btnCanc.Text = "Cancelar";
             this.btnCanc.UseVisualStyleBackColor = true;
+            this.btnCanc.Click += new System.EventHandler(this.btnCanc_Click);
             // 
             // btnAlt
             // 
@@ -218,7 +220,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lstProdutos;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mtkCNPJ;
         private System.Windows.Forms.MaskedTextBox mtkTel;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtNomee;

@@ -35,15 +35,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEnd = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtbTel = new System.Windows.Forms.MaskedTextBox();
             this.rbtDinheiro = new System.Windows.Forms.RadioButton();
             this.rbtCartao = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtpHora = new System.Windows.Forms.DateTimePicker();
+            this.gbxPag = new System.Windows.Forms.GroupBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.gbxPag.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -105,13 +105,13 @@
             this.txtEnd.Size = new System.Drawing.Size(274, 20);
             this.txtEnd.TabIndex = 6;
             // 
-            // maskedTextBox1
+            // mtbTel
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(25, 151);
-            this.maskedTextBox1.Mask = "(00)00000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(105, 20);
-            this.maskedTextBox1.TabIndex = 7;
+            this.mtbTel.Location = new System.Drawing.Point(25, 151);
+            this.mtbTel.Mask = "(00)00000-0000";
+            this.mtbTel.Name = "mtbTel";
+            this.mtbTel.Size = new System.Drawing.Size(105, 20);
+            this.mtbTel.TabIndex = 7;
             // 
             // rbtDinheiro
             // 
@@ -136,23 +136,23 @@
             this.rbtCartao.Text = "Cartão";
             this.rbtCartao.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpHora
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(227, 151);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(159, 20);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtpHora.Location = new System.Drawing.Point(227, 151);
+            this.dtpHora.Name = "dtpHora";
+            this.dtpHora.Size = new System.Drawing.Size(159, 20);
+            this.dtpHora.TabIndex = 10;
             // 
-            // groupBox1
+            // gbxPag
             // 
-            this.groupBox1.Controls.Add(this.rbtCartao);
-            this.groupBox1.Controls.Add(this.rbtDinheiro);
-            this.groupBox1.Location = new System.Drawing.Point(25, 220);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(166, 75);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.gbxPag.Controls.Add(this.rbtCartao);
+            this.gbxPag.Controls.Add(this.rbtDinheiro);
+            this.gbxPag.Location = new System.Drawing.Point(25, 220);
+            this.gbxPag.Name = "gbxPag";
+            this.gbxPag.Size = new System.Drawing.Size(166, 75);
+            this.gbxPag.TabIndex = 11;
+            this.gbxPag.TabStop = false;
+            this.gbxPag.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnSalvar
             // 
@@ -162,6 +162,7 @@
             this.btnSalvar.TabIndex = 12;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancel
             // 
@@ -171,6 +172,7 @@
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAlterar
             // 
@@ -189,9 +191,9 @@
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.gbxPag);
+            this.Controls.Add(this.dtpHora);
+            this.Controls.Add(this.mtbTel);
             this.Controls.Add(this.txtEnd);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label5);
@@ -201,8 +203,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form3";
             this.Text = "Clientes";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbxPag.ResumeLayout(false);
+            this.gbxPag.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,11 +219,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtEnd;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mtbTel;
         private System.Windows.Forms.RadioButton rbtDinheiro;
         private System.Windows.Forms.RadioButton rbtCartao;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DateTimePicker dtpHora;
+        private System.Windows.Forms.GroupBox gbxPag;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAlterar;

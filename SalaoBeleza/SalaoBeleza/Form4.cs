@@ -21,5 +21,24 @@ namespace SalaoBeleza
         {
 
         }
+
+        private void btnSalve_Click(object sender, EventArgs e)
+        {
+            String nome = txtNomee.Text;
+            String endereco = txtEndereco.Text;
+            String telefone = mtkTel.Text;
+            String horario = mtkCNPJ.Text;
+
+            MessageBox.Show("Salvo com Sucesso");
+        }
+
+        private void btnCanc_Click(object sender, EventArgs e)
+        {
+            txtNomee.Text = "";
+            txtEndereco.Text = "";
+            mtkTel.Text = "";
+            mtkCNPJ.Text = "";
+            
+        }
     }
 }

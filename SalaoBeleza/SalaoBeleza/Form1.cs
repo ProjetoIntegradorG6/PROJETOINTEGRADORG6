@@ -21,5 +21,15 @@ namespace SalaoBeleza
         {
 
         }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            if ((txtLogin.Text == "Suh") && (txtPass.Text == "123")) ;
+            {
+                Form2 frmp = new Form2();
+                frmp.Show();
+                this.Visible = false;
+            }
+        }
     }
 }
