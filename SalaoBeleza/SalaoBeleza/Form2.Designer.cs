@@ -28,152 +28,219 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cadastroClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuProdutos = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviçosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.escovaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alinhamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.corteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pinturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuSair = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPessoa = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.panelCabecalho = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnMaximizar = new System.Windows.Forms.Button();
+            this.btnRestaurar = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnServ = new System.Windows.Forms.Button();
+            this.btnProdutos = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.panelConteudo = new System.Windows.Forms.Panel();
+            this.panelCabecalho.SuspendLayout();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // panelCabecalho
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroClientesToolStripMenuItem,
-            this.produtosToolStripMenuItem,
-            this.serviçosToolStripMenuItem,
-            this.mnuSair});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(382, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.panelCabecalho.BackColor = System.Drawing.Color.Goldenrod;
+            this.panelCabecalho.Controls.Add(this.label1);
+            this.panelCabecalho.Controls.Add(this.btnMaximizar);
+            this.panelCabecalho.Controls.Add(this.btnRestaurar);
+            this.panelCabecalho.Controls.Add(this.btnFechar);
+            this.panelCabecalho.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCabecalho.Location = new System.Drawing.Point(0, 0);
+            this.panelCabecalho.Name = "panelCabecalho";
+            this.panelCabecalho.Size = new System.Drawing.Size(480, 38);
+            this.panelCabecalho.TabIndex = 1;
             // 
-            // cadastroClientesToolStripMenuItem
+            // label1
             // 
-            this.cadastroClientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesToolStripMenuItem});
-            this.cadastroClientesToolStripMenuItem.Name = "cadastroClientesToolStripMenuItem";
-            this.cadastroClientesToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
-            this.cadastroClientesToolStripMenuItem.Text = "Cadastro Clientes";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.NavajoWhite;
+            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 28);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Sistema de Agendamento";
             // 
-            // produtosToolStripMenuItem
+            // btnMaximizar
             // 
-            this.produtosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuProdutos});
-            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
-            this.produtosToolStripMenuItem.Text = "Produtos";
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMaximizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMaximizar.FlatAppearance.BorderSize = 0;
+            this.btnMaximizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximizar.Image = global::SalaoBeleza.Properties.Resources.setas_flechas1;
+            this.btnMaximizar.Location = new System.Drawing.Point(343, 1);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(40, 40);
+            this.btnMaximizar.TabIndex = 2;
+            this.btnMaximizar.UseVisualStyleBackColor = true;
             // 
-            // mnuProdutos
+            // btnRestaurar
             // 
-            this.mnuProdutos.Name = "mnuProdutos";
-            this.mnuProdutos.Size = new System.Drawing.Size(205, 22);
-            this.mnuProdutos.Text = "Fornecedores e Produtos";
-            this.mnuProdutos.Click += new System.EventHandler(this.mnuProdutos_Click);
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRestaurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnRestaurar.FlatAppearance.BorderSize = 0;
+            this.btnRestaurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestaurar.Image = global::SalaoBeleza.Properties.Resources.setas_flechas;
+            this.btnRestaurar.Location = new System.Drawing.Point(389, 10);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(44, 23);
+            this.btnRestaurar.TabIndex = 1;
+            this.btnRestaurar.UseVisualStyleBackColor = true;
             // 
-            // serviçosToolStripMenuItem
+            // btnFechar
             // 
-            this.serviçosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.escovaToolStripMenuItem,
-            this.alinhamentoToolStripMenuItem,
-            this.corteToolStripMenuItem,
-            this.selagemToolStripMenuItem,
-            this.pinturaToolStripMenuItem});
-            this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.serviçosToolStripMenuItem.Text = "Serviços";
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnFechar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Image = global::SalaoBeleza.Properties.Resources.sinais1;
+            this.btnFechar.Location = new System.Drawing.Point(424, 10);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(44, 23);
+            this.btnFechar.TabIndex = 0;
+            this.btnFechar.UseVisualStyleBackColor = true;
             // 
-            // escovaToolStripMenuItem
+            // panelMenu
             // 
-            this.escovaToolStripMenuItem.Name = "escovaToolStripMenuItem";
-            this.escovaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.escovaToolStripMenuItem.Text = "Escova";
+            this.panelMenu.BackColor = System.Drawing.Color.Thistle;
+            this.panelMenu.Controls.Add(this.btnSair);
+            this.panelMenu.Controls.Add(this.btnServ);
+            this.panelMenu.Controls.Add(this.btnProdutos);
+            this.panelMenu.Controls.Add(this.btnClientes);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 38);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(152, 395);
+            this.panelMenu.TabIndex = 2;
             // 
-            // alinhamentoToolStripMenuItem
+            // btnSair
             // 
-            this.alinhamentoToolStripMenuItem.Name = "alinhamentoToolStripMenuItem";
-            this.alinhamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.alinhamentoToolStripMenuItem.Text = "Alinhamento";
+            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.ForeColor = System.Drawing.Color.White;
+            this.btnSair.Image = global::SalaoBeleza.Properties.Resources.icon1;
+            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSair.Location = new System.Drawing.Point(26, 188);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(111, 43);
+            this.btnSair.TabIndex = 3;
+            this.btnSair.Text = "Sair";
+            this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSair.UseVisualStyleBackColor = true;
             // 
-            // corteToolStripMenuItem
+            // btnServ
             // 
-            this.corteToolStripMenuItem.Name = "corteToolStripMenuItem";
-            this.corteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.corteToolStripMenuItem.Text = "Corte";
+            this.btnServ.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnServ.FlatAppearance.BorderSize = 0;
+            this.btnServ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnServ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.btnServ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnServ.ForeColor = System.Drawing.Color.White;
+            this.btnServ.Image = global::SalaoBeleza.Properties.Resources.monitor;
+            this.btnServ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnServ.Location = new System.Drawing.Point(26, 136);
+            this.btnServ.Name = "btnServ";
+            this.btnServ.Size = new System.Drawing.Size(111, 46);
+            this.btnServ.TabIndex = 2;
+            this.btnServ.Text = "Serviços";
+            this.btnServ.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnServ.UseVisualStyleBackColor = true;
             // 
-            // selagemToolStripMenuItem
+            // btnProdutos
             // 
-            this.selagemToolStripMenuItem.Name = "selagemToolStripMenuItem";
-            this.selagemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.selagemToolStripMenuItem.Text = "Selagem";
+            this.btnProdutos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnProdutos.FlatAppearance.BorderSize = 0;
+            this.btnProdutos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdutos.ForeColor = System.Drawing.Color.White;
+            this.btnProdutos.Image = global::SalaoBeleza.Properties.Resources.sabonete_liquido;
+            this.btnProdutos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProdutos.Location = new System.Drawing.Point(26, 77);
+            this.btnProdutos.Name = "btnProdutos";
+            this.btnProdutos.Size = new System.Drawing.Size(111, 43);
+            this.btnProdutos.TabIndex = 1;
+            this.btnProdutos.Text = "Produtos";
+            this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProdutos.UseVisualStyleBackColor = true;
             // 
-            // pinturaToolStripMenuItem
+            // btnClientes
             // 
-            this.pinturaToolStripMenuItem.Name = "pinturaToolStripMenuItem";
-            this.pinturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pinturaToolStripMenuItem.Text = "Pintura";
+            this.btnClientes.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
+            this.btnClientes.Image = global::SalaoBeleza.Properties.Resources.icon;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(26, 22);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(111, 38);
+            this.btnClientes.TabIndex = 0;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClientes.UseVisualStyleBackColor = true;
             // 
-            // mnuSair
+            // panelConteudo
             // 
-            this.mnuSair.Name = "mnuSair";
-            this.mnuSair.Size = new System.Drawing.Size(38, 20);
-            this.mnuSair.Text = "Sair";
-            this.mnuSair.Click += new System.EventHandler(this.mnuSair_Click);
-            // 
-            // clientesToolStripMenuItem
-            // 
-            this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuPessoa});
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // mnuPessoa
-            // 
-            this.mnuPessoa.Name = "mnuPessoa";
-            this.mnuPessoa.Size = new System.Drawing.Size(180, 22);
-            this.mnuPessoa.Text = "Pessoa Física";
+            this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelConteudo.Location = new System.Drawing.Point(152, 38);
+            this.panelConteudo.Name = "panelConteudo";
+            this.panelConteudo.Size = new System.Drawing.Size(328, 395);
+            this.panelConteudo.TabIndex = 3;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 450);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(480, 433);
+            this.Controls.Add(this.panelConteudo);
+            this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelCabecalho);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
-            this.Text = "Main";
-            this.Load += new System.EventHandler(this.Form2_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.panelCabecalho.ResumeLayout(false);
+            this.panelCabecalho.PerformLayout();
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cadastroClientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuProdutos;
-        private System.Windows.Forms.ToolStripMenuItem serviçosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem escovaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuSair;
-        private System.Windows.Forms.ToolStripMenuItem alinhamentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem corteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem selagemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pinturaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnuPessoa;
+        private System.Windows.Forms.Panel panelCabecalho;
+        private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.Button btnMaximizar;
+        private System.Windows.Forms.Button btnRestaurar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnProdutos;
+        private System.Windows.Forms.Button btnServ;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Panel panelConteudo;
     }
 }

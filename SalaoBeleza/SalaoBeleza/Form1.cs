@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SalaoBeleza
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -61,6 +61,20 @@ namespace SalaoBeleza
             {
                 txtPass.PasswordChar = '*';
             }
+        }
+
+        private void Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Console.WriteLine("Pressed keys enter");
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

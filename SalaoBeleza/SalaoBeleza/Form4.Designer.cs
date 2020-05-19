@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lstProdutos = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.mtkCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.mtkTel = new System.Windows.Forms.MaskedTextBox();
@@ -43,6 +42,7 @@
             this.btnSalve = new System.Windows.Forms.Button();
             this.btnCanc = new System.Windows.Forms.Button();
             this.btnAlt = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,30 +58,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 151);
+            this.label2.Location = new System.Drawing.Point(12, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Fornecedores";
-            // 
-            // lstProdutos
-            // 
-            this.lstProdutos.FormattingEnabled = true;
-            this.lstProdutos.Items.AddRange(new object[] {
-            "Alisantes",
-            "Cremes para hidratação",
-            "Escovas",
-            "Pentes",
-            "Pranchas",
-            "Secadores",
-            "Tesouras",
-            "Tinturas",
-            "Toalhas"});
-            this.lstProdutos.Location = new System.Drawing.Point(15, 25);
-            this.lstProdutos.Name = "lstProdutos";
-            this.lstProdutos.Size = new System.Drawing.Size(191, 95);
-            this.lstProdutos.TabIndex = 2;
-            this.lstProdutos.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -93,7 +74,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(15, 167);
+            this.panel1.Location = new System.Drawing.Point(15, 87);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(323, 180);
             this.panel1.TabIndex = 3;
@@ -193,16 +174,34 @@
             this.btnAlt.Text = "Alterar";
             this.btnAlt.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Alisantes",
+            "Cremes para hidratação",
+            "Escovas",
+            "Pentes",
+            "Pranchas",
+            "Secadores",
+            "Tesouras",
+            "Tinturas",
+            "Toalhas"});
+            this.comboBox1.Location = new System.Drawing.Point(15, 25);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 450);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAlt);
             this.Controls.Add(this.btnCanc);
             this.Controls.Add(this.btnSalve);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lstProdutos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Produtos";
@@ -218,7 +217,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lstProdutos;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.MaskedTextBox mtkCNPJ;
         private System.Windows.Forms.MaskedTextBox mtkTel;
@@ -231,5 +229,6 @@
         private System.Windows.Forms.Button btnSalve;
         private System.Windows.Forms.Button btnCanc;
         private System.Windows.Forms.Button btnAlt;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
