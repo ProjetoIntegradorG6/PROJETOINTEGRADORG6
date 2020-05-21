@@ -55,6 +55,7 @@
             this.panelCabecalho.Name = "panelCabecalho";
             this.panelCabecalho.Size = new System.Drawing.Size(480, 38);
             this.panelCabecalho.TabIndex = 1;
+            this.panelCabecalho.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelCabecalho_MouseMove);
             // 
             // label1
             // 
@@ -82,6 +83,7 @@
             this.btnMaximizar.Size = new System.Drawing.Size(40, 40);
             this.btnMaximizar.TabIndex = 2;
             this.btnMaximizar.UseVisualStyleBackColor = true;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnRestaurar
             // 
@@ -98,6 +100,7 @@
             this.btnRestaurar.Size = new System.Drawing.Size(44, 23);
             this.btnRestaurar.TabIndex = 1;
             this.btnRestaurar.UseVisualStyleBackColor = true;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click_1);
             // 
             // btnFechar
             // 
@@ -114,6 +117,7 @@
             this.btnFechar.Size = new System.Drawing.Size(44, 23);
             this.btnFechar.TabIndex = 0;
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
             // 
             // panelMenu
             // 
@@ -146,6 +150,7 @@
             this.btnSair.Text = "Sair";
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnServ
             // 
@@ -165,6 +170,7 @@
             this.btnServ.Text = "Serviços";
             this.btnServ.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnServ.UseVisualStyleBackColor = true;
+            this.btnServ.Click += new System.EventHandler(this.btnServ_Click);
             // 
             // btnProdutos
             // 
@@ -184,6 +190,7 @@
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProdutos.UseVisualStyleBackColor = true;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // btnClientes
             // 
@@ -203,6 +210,7 @@
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // panelConteudo
             // 

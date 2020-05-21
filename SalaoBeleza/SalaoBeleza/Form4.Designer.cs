@@ -42,7 +42,7 @@
             this.btnSalve = new System.Windows.Forms.Button();
             this.btnCanc = new System.Windows.Forms.Button();
             this.btnAlt = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbProdutos = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,10 +174,10 @@
             this.btnAlt.Text = "Alterar";
             this.btnAlt.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmbProdutos
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbProdutos.FormattingEnabled = true;
+            this.cmbProdutos.Items.AddRange(new object[] {
             "Alisantes",
             "Cremes para hidratação",
             "Escovas",
@@ -187,17 +187,17 @@
             "Tesouras",
             "Tinturas",
             "Toalhas"});
-            this.comboBox1.Location = new System.Drawing.Point(15, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 7;
+            this.cmbProdutos.Location = new System.Drawing.Point(15, 25);
+            this.cmbProdutos.Name = "cmbProdutos";
+            this.cmbProdutos.Size = new System.Drawing.Size(121, 21);
+            this.cmbProdutos.TabIndex = 7;
             // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbProdutos);
             this.Controls.Add(this.btnAlt);
             this.Controls.Add(this.btnCanc);
             this.Controls.Add(this.btnSalve);
@@ -229,6 +229,6 @@
         private System.Windows.Forms.Button btnSalve;
         private System.Windows.Forms.Button btnCanc;
         private System.Windows.Forms.Button btnAlt;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbProdutos;
     }
 }
