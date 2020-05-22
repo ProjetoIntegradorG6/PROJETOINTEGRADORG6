@@ -72,9 +72,6 @@ namespace SalaoBeleza
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
