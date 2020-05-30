@@ -19,8 +19,7 @@ namespace SalaoBeleza
 
         private void label1_Click(object sender, EventArgs e)
         {
-
-        }
+                    }
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
@@ -72,6 +71,19 @@ namespace SalaoBeleza
             }
         }
 
-       
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

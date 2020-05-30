@@ -33,8 +33,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtEnd = new System.Windows.Forms.TextBox();
             this.mtbTel = new System.Windows.Forms.MaskedTextBox();
             this.rbtDinheiro = new System.Windows.Forms.RadioButton();
             this.rbtCartao = new System.Windows.Forms.RadioButton();
@@ -43,6 +41,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
+            this.txtNome = new ZBobb.AlphaBlendTextBox();
+            this.txtEnd = new ZBobb.AlphaBlendTextBox();
             this.gbxPag.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,20 +90,6 @@
             this.label5.Size = new System.Drawing.Size(41, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Horário";
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(25, 25);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(274, 20);
-            this.txtNome.TabIndex = 5;
-            // 
-            // txtEnd
-            // 
-            this.txtEnd.Location = new System.Drawing.Point(25, 89);
-            this.txtEnd.Name = "txtEnd";
-            this.txtEnd.Size = new System.Drawing.Size(274, 20);
-            this.txtEnd.TabIndex = 6;
             // 
             // mtbTel
             // 
@@ -156,6 +142,7 @@
             // 
             // btnSalvar
             // 
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Location = new System.Drawing.Point(269, 220);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
@@ -166,6 +153,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Location = new System.Drawing.Point(269, 272);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -176,6 +164,7 @@
             // 
             // btnAlterar
             // 
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterar.Location = new System.Drawing.Point(269, 327);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 23);
@@ -183,19 +172,38 @@
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
             // 
+            // txtNome
+            // 
+            this.txtNome.BackAlpha = 10;
+            this.txtNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtNome.Location = new System.Drawing.Point(25, 25);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(274, 20);
+            this.txtNome.TabIndex = 15;
+            // 
+            // txtEnd
+            // 
+            this.txtEnd.BackAlpha = 10;
+            this.txtEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtEnd.Location = new System.Drawing.Point(25, 89);
+            this.txtEnd.Name = "txtEnd";
+            this.txtEnd.Size = new System.Drawing.Size(274, 20);
+            this.txtEnd.TabIndex = 16;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(400, 421);
+            this.Controls.Add(this.txtEnd);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.gbxPag);
             this.Controls.Add(this.dtpHora);
             this.Controls.Add(this.mtbTel);
-            this.Controls.Add(this.txtEnd);
-            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -217,8 +225,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtEnd;
         private System.Windows.Forms.MaskedTextBox mtbTel;
         private System.Windows.Forms.RadioButton rbtDinheiro;
         private System.Windows.Forms.RadioButton rbtCartao;
@@ -227,5 +233,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAlterar;
+        private ZBobb.AlphaBlendTextBox txtNome;
+        private ZBobb.AlphaBlendTextBox txtEnd;
     }
 }
