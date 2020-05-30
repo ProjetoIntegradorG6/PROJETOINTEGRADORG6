@@ -30,7 +30,7 @@ namespace SalaoBeleza
             }
             else
             {
-                if (txtLogin.Text == "suh" && txtPass.Text == "1234")
+                if (txtLogin.Text == "Admin" && txtPass.Text == "1234")
                 {
                     Main frm = new Main();
 

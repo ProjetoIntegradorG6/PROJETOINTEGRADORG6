@@ -84,6 +84,7 @@
             // 
             // btnEntrar
             // 
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Location = new System.Drawing.Point(229, 370);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
@@ -94,6 +95,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Location = new System.Drawing.Point(229, 415);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
@@ -104,6 +106,7 @@
             // 
             // btnShowPass
             // 
+            this.btnShowPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowPass.Image = global::SalaoBeleza.Properties.Resources.cadeado;
             this.btnShowPass.Location = new System.Drawing.Point(272, 280);
             this.btnShowPass.Name = "btnShowPass";
